@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>QuotEra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#default" class="logo">QuotEra</a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="category">
+            <label class="a"><input type="radio" name="category" value="science" checked> Science</label>
+            <label class="a"><input type="radio" name="category" value="inspiration"> Inspiration</label>
+            <label class="a"><input type="radio" name="category" value="love"> Love</label>
+            <label class="a"><input type="radio" name="category" value="anime"> Anime</label>
+        </div> 
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </header>
+    <main>
+        <div class="quote-container">
+            <h2 id="category-sel"> Category Quote</h2>
+            <div class="content">
+                <blockquote id="quote">This is a sample quote.</blockquote>
+            </div>
+            <div class="controls">
+                <button id="prevBtn">Previous</button>
+                <button id="randomBtn">Random</button>
+                <button id="nextBtn">Next</button>
+            </div>
+            <label for="font-size">Font Size </label>
+            <div class="font-size">
+                <button id="decreaseFontBtn">-</button>
+                <span id="fontSize">26</span>
+                <button id="increaseFontBtn">+</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
